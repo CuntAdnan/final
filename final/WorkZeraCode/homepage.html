@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Noto+Serif+Display:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body style="width: 100%">
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#"><img src="visiting-card-1-2.png" alt=""></a></div>
+        <ul class="links">
+          <li><a class="nav-link scrollto " href="./homepage.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./aboutus.html">About</a></li>
+          <li><a class="nav-link scrollto" href="./index.html">Services</a></li>
+          <li><a class="nav-link scrollto" href="./contact.html">Clients</a></li>
+          <li><a class="nav-link scrollto" href="./contactus.html">Contact</a></li>
+          <li><a class="getstarted scrollto" href="./aboutus.html">Get Started</a></li>
+        </ul>
+        <a href="#" class="query">SEND QUERY</a>
+        <div class="toggle_btn"><i class="fa-solid  fa-bars"></i></div>
+      </div>
+
+
+      <div class="dropdown_menu">
+        <li><a href="homepage.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUTUS</a></li>
+          <li><a href="index.html">SERVICES</a></li>
+          <li><a href="products.html">PROGUCTS</a></li>
+          <li><a href="contact.html">CLIENTS</a></li>
+          <li><a href="contactus.html">CONTACTUS</a></li>
+        <li><a href="#" class="query">SEND QUERY</a></li>
+      </div>
+
+      <!-- <main>
+        <section id = 'hero'>
+          <h1> WELCOME</h1>
+          <P>We provide specialized cleaning services to the corporate and
+            residential sectors in a reliable, consistent and regular manner.</P>
+        </section>
+      </main> -->
+
+      <!-- <div class="dropdown_menu ">
+        <li><a href="home">HOME</a></li>
+          <li><a href="home">ABOUTUS</a></li>
+          <li><a href="home">SERVICES</a></li>
+          <li><a href="home">PROGUCTS</a></li>
+          <li><a href="home">CLIENTS</a></li>
+          <li><a href="home">CONTACTUS</a></li>
+      </div> -->
+
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function (){
+          dropDownMenu.classList.toggle('open');
+          const isOpen = dropDownMenu.classList.contains('open')
+
+
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid  fa-xmark'
+          : 'fa-solid  fa-bars'
+
+        };
+      </script>
+
+    </header>
+    
+
+
+    <div class="hero">
+      <img
+        src="https://images.pexels.com/photos/713297/pexels-photo-713297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Hero Image"
+      />
+      <div class="hero-text">
+        <h1 style="font-size: 7vw">CleanTech</h1>
+        <p style="font-size: 1.6vw">
+          On Stop Solutions Provider for all <br>
+          Facility Management Needs <br>
+        </p>
+        <a style="scale: 10vx" href="index.html" title="call to action button"
+          >Explore our Services</a>
+      </div>
+    </div>
+
+    <br />
+    <br /><br /><br />
+
+    <div class="row">
+      <h1>
+        <center>Our Areas of Work</center> <br>
+      </h1>
+    </div>
+
+    <!-- <div class="row">
+      <div class="column">
+        <img
+          id="abc"
+          src="https://cleantechservices.org.in/wp-content/uploads/2020/03/1_mgrcl-zxu4C22wl0ZQez2Q-2.png"
+          style="width: 100%"
+        />
+        <div class="vl"></div>
+      </div>
+
+      <div class="column">
+        <br />
+        <h2 style="margin-left: 115px" >General Office Cleaning</h2>
+
+        <h4 style="margin-left: 115px">
+          <br />We provide specialized cleaning services to the corporate and
+          residential sectors in a reliable, consistent and regular manner.
+        </h4>
+        <button type="button">Read More...</button>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="column">
+        <br />
+        <h2 style="margin-left: 115px">Specialised Cleaning Services</h2>
+
+        <h4 style="margin-left: 115px">
+          <br />
+          We are Specialized cleaning Services in Carpet Care, Stone Care,
+          Upholstery Care, Floor Care, Car Interior Cleaning, 3M Scotchgard..
+        </h4>
+        <button type="button">Read More...</button>
+        <div class="vl"></div>
+      </div>
+
+      <div class="column">
+        <img
+          id="abc"
+          src="https://cleantechservices.org.in/wp-content/uploads/IMG0021.jpg"
+          style="width: 90%"
+        />
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="column">
+        <img
+          id="abc"
+          src="https://indianfacilities.com/wp-content/uploads/2021/09/spray-buffing-a-floor.jpg"
+          style="width: 90%"
+        />
+        <div class="vl"></div>
+      </div>
+
+      <div class="column">
+        <br />
+        <h2 style="margin-left: 115px">Guest House Management</h2>
+
+        <h4 style="margin-left: 115px">
+          <br />
+          Facility Services trained the staff for proper maintenance of Guest
+          House. All Staff members are trained in handling of care
+        </h4>
+        <button type="button">Read More...</button>
+      </div>
+    </div> -->
+
+    <div class="grid-flex">
+      <div class="col col-image" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/280406/seattle-botanical-gardens.jpg);">
+      </div>
+      <div class="col col-text">
+        <div class="Aligner-item">
+            <h3>Specialised Cleaning Services</h3>
+            <br>
+          <p>We are Specialized cleaning Services in Carpet
+            Care, Stone Care, Upholstery Care, Floor Care, Car Interior Cleaning, 3M Scotchgard..
+            
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="grid-flex">
+      <div class="col col-image" style="background-image: url(https://blog.woodenstreet.com/images/data/image_upload/16613308681650972289office-design-ideas-trends-banner-min.jpg);">
+        &nbsp;
+      </div>
+      <div class="col col-text col-left">
+        <div class="Aligner-item">
+            <h3>General Office Cleaning</h3><br>
+          <p>We provide specialized cleaning services to the corporate and residential sectors in a reliable, consistent and regular manner.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="grid-flex">
+      <div class="col col-image" style="background-image: url(https://ssl.cdn-redfin.com/photo/104/mbphoto/245/genMid.52097245_1.jpg);">
+        &nbsp;
+      </div>
+      <div class="col col-text">
+        <div class="Aligner-item">
+            <h3>Guest House Management</h3><br>
+          <p>Facility Services trained the staff for proper maintenance of Guest House. All Staff members are trained in handling of care
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <br /><br /><br />
+    <br><br><br>
+<div class="fade_rule"></div>
+    <br /><br /><br><br><br><br>
+
+    <div class="grid-flex">
+      <div class="col col-image" id="#state" style="background-image: url(cleaning_img.jpeg);">
+        &nbsp;
+      </div>
+      <div class="col col-text col-left">
+        <div class="Aligner-item">
+            <h3 >Industry best practices and specialized cleaning services utilize cutting-edge cleaning techniques.</h3><br>
+          <!-- <p>Facility Services trained the staff for proper maintenance of Guest House. All Staff members are trained in handling of care
+          </p> -->
+          <h4 style="margin-left: 40px;">
+            <br /><br />
+            <ion-icon name="flash-outline"></ion-icon> Electrical Services <br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="home-outline"></ion-icon> Furniture Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="color-fill-outline"></ion-icon> Painting & Polishing Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="water-outline"></ion-icon> House Keeping & Cleaning
+            Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="checkmark-done-outline"></ion-icon> Facility MGT
+            Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="sparkles-outline"></ion-icon> Renovation Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="pizza-outline"></ion-icon> Pantry Job Inhouse/
+            Industrial<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="key-outline"></ion-icon> Merchant Housekeeping
+            Services<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="storefront-outline"></ion-icon> Facade Cleaning<br />
+          </h4>
+          <h4 style="margin-left: 40px">
+            <ion-icon name="pizza-outline"></ion-icon> Spring Cleaning<br />
+          </h4>
+          <br><picture>
+            <source media="(min-width: )" srcset="">
+            <img src="" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+      <div class="column">
+        
+        <h2>
+          State of the art cleaning techniques according to industry best
+          practices and Specialized Cleaning Services.
+        </h2>
+
+        <h4 style="margin-left: 40px">
+          <br /><br />
+          <ion-icon name="flash-outline"></ion-icon> Electrical Services <br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="home-outline"></ion-icon> Furniture Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="color-fill-outline"></ion-icon> Painting & Polishing Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="water-outline"></ion-icon> House Keeping & Cleaning
+          Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="checkmark-done-outline"></ion-icon> Facility MGT
+          Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="sparkles-outline"></ion-icon> Renovation Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="pizza-outline"></ion-icon> Pantry Job Inhouse/
+          Industrial<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="key-outline"></ion-icon> Merchant Housekeeping
+          Services<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="storefront-outline"></ion-icon> Facade Cleaning<br />
+        </h4>
+        <h4 style="margin-left: 40px">
+          <ion-icon name="pizza-outline"></ion-icon> Spring Cleaning<br />
+        </h4>
+        <br><picture>
+          <source media="(min-width: )" srcset="">
+          <img src="" alt="">
+        </picture>
+      </div>
+
+      <div class="column">
+        <h4><br /></h4>
+        <img
+          id="abc"
+          src="https://assets-news.housing.com/news/wp-content/uploads/2020/10/04110325/Why-you-should-you-hire-professional-cleaning-services-while-moving-out-FB-1200x700-compressed.jpg"
+          style="width: 90%; height: 80%">
+        <h4><br><br></h4>
+
+      </div>
+    </div> -->
+
+    <br /><br /><br /><br><br><br>
+
+    <!-- <div class="rowx" id="pqr">
+      <hr>
+
+      <div class="column">
+
+        <h2> <br><br><br> ONE WAY OF SELF CARE....<br>GIVE CLEAN A CHANCE</h2>
+        <br> <br>
+        <br><br><br><br>
+        <h3>REACH US AT:</h3>
+        <br><br><br><br>
+        <div class="row2">
+          <div class="col2"style="width: 25%">
+            <div class="card"style="width: 100%">
+              
+              <div class="container">
+                <h5><ion-icon name="call"></ion-icon></h5> 
+                <h5>Phone <br>
+                  +91 94252-04556 <br>
+                  +91 93292-06359 <br>
+                  +91771 4073296 <br></h5>
+                
+                
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="col2" style="width: 25%">
+            <div class="card"style="width: 125%">
+              
+              <div class="container">
+    
+               
+                <h5><ion-icon name="mail-open"></ion-icon> <br> Email <br>
+                  info@cleantechservices.org.in <br>
+                  anirudh_juvekar@yahoo.com <br></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column" id="bottm"><br><br><br>
+        <br><br>
+        <h4 style="margin-left: 115px"><br><br><br><br><br><br></h4>
+        
+        <h4 style="margin-left: 115px">
+          <br /><br />
+          HOME <br><br />
+        </h4>
+        <h4 style="margin-left: 115px">
+           ABOUT US<br><br />
+        </h4>
+        <h4 style="margin-left: 115px">
+          SERVICES<br><br />
+        </h4>
+        <h4 style="margin-left: 115px">PRODUCTS<br><br />
+        </h4>
+        <h4 style="margin-left: 115px">CLIENTS<br><br />
+
+        <h4>_____________________________</h4><br>
+
+        <ul id="bottm_icons">
+          <br>
+          <li><ion-icon name="logo-facebook"></ion-icon></li>
+          <li><ion-icon name="logo-linkedin"></ion-icon></li>
+          <li><ion-icon name="logo-instagram"></ion-icon> </li>
+
+        </ul>
+
+
+       
+      </div>
+    </div> -->
+    <br><br><br>br
+    <footer>
+      <div class="footer">
+      <div class="row" id="media_links">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      
+
+      </div>
+      
+      <div class="row">
+      <ul>
+        <li><a class="nav-link scrollto " href="./homepage.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="./aboutus.html">About</a></li>
+        <li><a class="nav-link scrollto" href="./index.html">Services</a></li>
+        <li><a class="nav-link scrollto" href="./contact.html">Clients</a></li>
+        <li><a class="nav-link scrollto" href="./contactus.html">Contact</a></li>
+        <li><a class="getstarted scrollto" href="./aboutus.html">Get Started</a></li>
+      </ul>
+      </div>
+      
+      <div class="row" id="footer_txt">
+      @2020 Cleantech Services & Workforce All rights reserved. Design By - WorkZera
+      </div>
+      </div>
+      </footer>
+  </body>
+</html>
